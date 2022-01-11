@@ -1,0 +1,31 @@
+@import "../../../../scss/index.scss";
+
+.respass {
+  background-color: $body-bg;
+  display: flex;
+  .respass_body {
+    flex: 1;
+    .respass_body_logo {
+      text-align: center;
+      margin-top: 82px;
+      margin-bottom: 75px;
+      img {
+        width: 170px;
+        height: 136px;
+      }
+    }
+    .respass_body_center {
+      margin: 0 auto;
+      width: 400px;
+    }
+  }
+  .respass_baner {
+    width: 848px;
+    background-color: $body-White;
+    position: relative;
+    img {
+      margin-top: 4%;
+      margin-left: 4%;
+    }
+  }
+}

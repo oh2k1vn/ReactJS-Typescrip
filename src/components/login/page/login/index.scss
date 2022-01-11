@@ -1,0 +1,47 @@
+@import "../../../../scss/index.scss";
+
+.login {
+  background-color: $body-bg;
+  display: flex;
+  .login_body {
+    flex: 1;
+    .login_body_logo {
+      text-align: center;
+      margin-top: 82px;
+      margin-bottom: 75px;
+      img {
+        width: 170px;
+        height: 136px;
+      }
+    }
+    .login_body_center {
+      margin: 0 auto;
+      width: 400px;
+    }
+  }
+  .login_baner {
+    width: 848px;
+    background-color: $body-White;
+    position: relative;
+    img {
+      margin-left: 79px;
+    }
+    .login_baner_title {
+      position: absolute;
+      right: 4%;
+      bottom: 35%;
+      .login_baner_title_top {
+        color: $bg-web;
+        font-size: $fz-34;
+        line-height: 51px;
+        font-weight: 400;
+      }
+      .login_baner_title_bottom {
+        color: $bg-web;
+        font-size: $fz-36;
+        font-weight: 900;
+        line-height: 54px;
+      }
+    }
+  }
+}
