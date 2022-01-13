@@ -1,11 +1,18 @@
-import React from 'react'
-import baner_login from '../../../../assets/img/baner_login.png';
-import Logo from '../../../../assets/img/Logo_alta.png';
-import './index.scss';
+import React, { useState } from 'react'
+import baner_login from '../../assets/img/baner_login.png';
+import Logo from '../../assets/img/Logo_alta.png';
+import './Login.scss';
 
-import Index from '../../components/login';
+import Index from '../../components/login/login/Login';
 
-const index = () => {
+const Login = () => {
+    // const [user, setUser] = useState({name: "", pass: ""});
+    const [error, setError] = useState("");
+
+
+    const login = details => {
+        console.log(details)
+    }
     return (
         <div className='login'>
             <div className='login_body'>
@@ -13,7 +20,7 @@ const index = () => {
                     <img src={Logo} alt='' />
                 </div>
                 <div className='login_body_center'>
-                    <Index />
+                    <Index Login={login} Error={error}/>
                 </div>
 
             </div>
@@ -28,4 +35,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Login

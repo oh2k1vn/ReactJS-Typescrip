@@ -1,4 +1,4 @@
-@import "../../../../scss/index.scss";
+@import "../../../scss/index.scss";
 
 .resetpass_body {
   p {
@@ -12,11 +12,14 @@
     @include label;
   }
   .resetpass_body_input {
-      position: relative;
-    svg {
-      width: 16.67px;
-      height: 16.67px;
-      position: absolute
+    position: relative;
+    span {
+      display: none;
+      svg {
+        width: 16.67px;
+        height: 16.67px;
+        position: absolute;
+      }
     }
     input {
       @include input;

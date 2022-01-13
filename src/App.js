@@ -3,14 +3,18 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from "./components/login/page/login";
-import Respass from "./components/login/page/repass";
+import MyAccount from "./pages/user/User";
+import Login from "./pages/login/Login";
+import Respass from "./pages/login/ResetPass";
+import ResetPass from "./pages/login/Test";
 
 function App() {
   return (
     <Routes>
         <Route path='/' element={<Login/>} />
-        <Route path='/respass' element={<Respass />} />
+        <Route path='/1' element={<Respass />} />
+        <Route path='/2' element={<ResetPass />} />
+        <Route path='/3' element={<MyAccount/>} />
     </Routes>
   );
 }

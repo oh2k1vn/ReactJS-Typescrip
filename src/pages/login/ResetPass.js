@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "../../../../assets/img/Logo_alta.png";
-import baner_respass from "../../../../assets/img/baner_respass.png";
-import "./index.scss";
+import Logo from "../../assets/img/Logo_alta.png";
+import baner_respass from "../../assets/img/baner_respass.png";
+import "./ResetPass.scss";
 
 // import Respass from '../../components/respass';
-import Resetpass from '../../components/resetpass'
+import Resetpass from '../../components/login/resetpass/index'
 
-const index = () => {
+const ResetPass = () => {
   return (
     <div className="respass">
       <div className="respass_body">
@@ -30,4 +30,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default ResetPass;
