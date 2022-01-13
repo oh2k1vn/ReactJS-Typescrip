@@ -25,8 +25,14 @@
     background-color: $body-White;
     position: relative;
     img {
-      margin-top: 4%;
-      margin-left: 4%;
+      width: 100%;
+      max-width: 711px;
+      height: 100%;
+      max-height: 560px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
