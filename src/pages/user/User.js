@@ -1,8 +1,8 @@
 import React from "react";
 import "./User.scss";
 
-import logo from "../../assets/img/Logo_alta.png";
-import thietbi from "../../assets/img/icon-menu/thietbi.png";
+
+import logo from "../../assets/images/logo/Logo_alta.png";
 import { Link } from "react-router-dom";
 
 const User = () => {
@@ -41,7 +41,7 @@ const User = () => {
           {Menus.map((menu, index) => {
             return (
               <li key={index}>
-                <Link to="#">
+                <Link to={menu.link}>
                   <img src={menu.icon} alt=""></img>
                   <p>{menu.title}</p>
                 </Link>

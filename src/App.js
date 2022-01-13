@@ -15,6 +15,8 @@ function App() {
         <Route path='/1' element={<Respass />} />
         <Route path='/2' element={<ResetPass />} />
         <Route path='/3' element={<MyAccount/>} />
+
+        
     </Routes>
   );
 }

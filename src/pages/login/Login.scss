@@ -3,6 +3,7 @@
 .login {
   background-color: $body-bg;
   display: flex;
+  height: 100vh;
   .login_body {
     flex: 1;
     .login_body_logo {

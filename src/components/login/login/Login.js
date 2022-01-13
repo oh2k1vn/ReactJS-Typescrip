@@ -32,6 +32,7 @@ const Login = ({ Login, Error }) => {
       <label>Mật khẩu *</label>
       <input
         type="password"
+        placeholder="Nhập mật khẩu"
         onChange={handleInputPassword}
         value={details.password}
       />

@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../../assets/img/Logo_alta.png";
-import baner_respass from "../../assets/img/baner_respass.png";
+import baner_respass from '../../assets/images/banner/banner_respass.png';
+import Logo from '../../assets/images/logo/Logo_alta.png';
 import "./ResetPass.scss";
 
 import Respass from '../../components/login/respass/index';

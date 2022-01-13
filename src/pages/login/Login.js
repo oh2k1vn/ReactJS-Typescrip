@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import baner_login from '../../assets/img/baner_login.png';
-import Logo from '../../assets/img/Logo_alta.png';
+import baner_login from '../../assets/images/banner/banner_login.png';
+import Logo from '../../assets/images/logo/Logo_alta.png';
 import './Login.scss';
 
 import Index from '../../components/login/login/Login';
+
 
 const Login = () => {
     // const [user, setUser] = useState({name: "", pass: ""});
@@ -15,8 +16,10 @@ const Login = () => {
     }
     return (
         <div className='login'>
+            
             <div className='login_body'>
                 <div className='login_body_logo'>
+
                     <img src={Logo} alt='' />
                 </div>
                 <div className='login_body_center'>
@@ -31,6 +34,9 @@ const Login = () => {
                     <p className='login_baner_title_bottom'>QUẢN LÝ XẾP HÀNG</p>
                 </div>
             </div>
+
+
+
         </div>
     )
 }
