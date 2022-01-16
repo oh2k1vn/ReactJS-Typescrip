@@ -1,6 +1,6 @@
 import React from "react";
 
-const Testnew = ({ className }) => {
+const Baocao = ({ className }) => {
   return (
       <svg
         width="18"
@@ -8,6 +8,7 @@ const Testnew = ({ className }) => {
         viewBox="0 0 18 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
       >
         <g clip-path="url(#clip0_30480_3766)">
           <mask
@@ -69,4 +70,4 @@ const Testnew = ({ className }) => {
   );
 };
 
-export default Testnew;
+export default Baocao;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dasboard = ({ className }) => {
+const Capso = ({ className }) => {
   return (
       <svg
         width="20"
@@ -8,6 +8,7 @@ const Dasboard = ({ className }) => {
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className={className}
       >
         <path
           d="M1.6665 14.166L9.99984 18.3327L18.3332 14.166"
@@ -34,4 +35,4 @@ const Dasboard = ({ className }) => {
   );
 };
 
-export default Dasboard;
+export default Capso;
