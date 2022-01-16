@@ -1,106 +1,68 @@
-
-.login_body {
-    label {
-      @include label;
-    }
-    input {
-      @include input;
-    }
-    p {
-      margin-top: 12px;
-      margin-bottom: 19px;
-      color: $color-red;
-      font-size: $fz-14;
-    }
-    button {
-      @include btn;
-      display: block;
-      margin: 0 auto;
-    }
-    .login_body_p {
-      text-align: center;
-      margin-top: 8px;
-      font-size: $fz-14;
-      line-height: calc(21 / 14);
-      color: #e73f3f;
-      cursor: pointer;
-    }
-    .login_body_warning {
-      display: flex;
-      align-items: center;
-      margin: 0 {
-          top: 12px;
-          bottom: 24px;
-      };
-      .login_body_icon {
-        margin-right: 4px;
-      }
-      .login_body_active {
-        display: inline-block;
-        font-size: $fz-14;
-        line-height: calc(21 / 14);
-        color: #e73f3f;
-        margin: 0;
-      }
-    }
-  }
-  
-
-
-
-
-  
 .login {
-    background-color: $body-bg;
-    display: flex;
-    height: 100vh;
-    .login_body {
-      flex: 1;
-      .login_body_logo {
-        text-align: center;
-        margin-top: 82px;
-        margin-bottom: 75px;
-        img {
-          width: 170px;
-          height: 136px;
-        }
-      }
-      .login_body_center {
-        margin: 0 auto;
-        width: 400px;
-      }
-    }
-    .login_baner {
-      width: 848px;
-      background-color: $body-White;
-      position: relative;
+  background-color: $bg;
+  display: flex;
+  height: 100vh;
+  &_left {
+    flex: 1;
+    form {
+      width: 400px;
+      margin: 0 auto;
       img {
         width: 100%;
-        max-width: 605px;
         height: 100%;
-        max-height: 614.06px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        max-width: 170px;
+        max-height: 136px;
+        display: block;
+        margin: auto {
+          top: 82px;
+          bottom: 75px;
+        }
       }
-      .login_baner_title {
-        position: absolute;
-        right: 2%;
-        bottom: 40%;
-        .login_baner_title_top {
-          color: $bg-web;
-          font-size: $fz-34;
-          line-height: calc(51 / 34);
-          font-weight: 400;
+      input {
+        @include input;
+      }
+      p {
+        color: $red;
+        font-size: $fz-14;
+        line-height: calc(21 / 14);
+        margin: 0 {
+          top: 12px;
+          bottom: 19px;
         }
-        .login_baner_title_bottom {
-          color: $bg-web;
-          font-size: $fz-36;
-          font-weight: 900;
-          line-height: calc(54 / 36);
-        }
+      }
+      button {
+        display: block;
+        margin: 0 auto;
       }
     }
   }
-  
+  &_right {
+    background-color: $bg-white;
+    width: 848px;
+    position: relative;
+    img {
+      max-height: 614, 06px;
+      max-width: 605px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &_title {
+      position: absolute;
+      right: 2%;
+      bottom: 35%;
+      &_top {
+        font-size: $fz-34;
+        line-height: calc(51 / 34);
+        color: $bg-global;
+      }
+      &_bottom {
+        font-weight: 900;
+        font-size: $fz-36;
+        line-height: calc(54 / 36);
+        color: $bg-global;
+      }
+    }
+  }
+}

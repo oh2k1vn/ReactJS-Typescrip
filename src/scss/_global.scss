@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&display=swap");
-
+@import './variables';
 
 * {
   padding: 0;
@@ -23,13 +23,13 @@ img {
 }
 
 .btn {
-  background-color: $bg-web;
+  background-color: $bg-global;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 700;
-  color: $body-White;
+  color: $bg-white;
   border: none;
   cursor: pointer;
   width: 162px;
@@ -37,7 +37,6 @@ img {
 }
 .label {
   font-size: $fz-18;
-  line-height: 27px;
   line-height: calc(27 / 18);
   font-weight: 400;
   color: #37474f;
