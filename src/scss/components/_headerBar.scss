@@ -1,0 +1,54 @@
+.HeaderBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 64px 45px 24px;
+  align-items: center;
+  &_p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ff9138;
+    flex: 1;
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    &_icon {
+      background-color: #fff2e7;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+      }
+    }
+    img {
+      height: 100%;
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 50%;
+      margin: 0 {
+        left: 24px;
+        right: 8px;
+      }
+    }
+    &_title {
+      width: 132px;
+      span {
+        font-size: $fz-12;
+        line-height: calc(18 / 12);
+        color: #7e7d88;
+      }
+      p {
+        font-weight: bold;
+        font-size: $fz-16;
+        line-height: calc(24 / 16);
+        color: #535261;
+      }
+    }
+  }
+}

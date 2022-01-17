@@ -1,0 +1,52 @@
+.myAccount {
+  display: flex;
+  background-color: $bg;
+  &_container {
+    flex: 1;
+    &_body {
+      width: 1112px;
+      height: 397px;
+      border-radius: 12px;
+      background-color: #fff;
+      margin-left: 24px;
+      display: flex;
+      &_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        img {
+          max-width: 248px;
+          max-height: 248px;
+          border-radius: 50%;
+          margin: 24px {
+            top: 40px;
+            bottom: 19px;   
+          }
+        }
+        p {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 36px;
+          color: #282739;
+        }
+      }
+      &_input {
+          margin-right: 24px;
+        input {
+          width: 384px;
+          height: 44px;
+          background: #eaeaec;
+          border-radius: 6px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #535261;
+          outline: none;
+          border: none;
+          padding: 16px;
+        }
+      }
+    }
+  }
+}

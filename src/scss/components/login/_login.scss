@@ -4,7 +4,7 @@
   height: 100vh;
   &_left {
     flex: 1;
-    form {
+    &_form {
       width: 400px;
       margin: 0 auto;
       img {
@@ -21,7 +21,7 @@
       input {
         @include input;
       }
-      p {
+      a {
         color: $red;
         font-size: $fz-14;
         line-height: calc(21 / 14);
@@ -33,6 +33,33 @@
       button {
         display: block;
         margin: 0 auto;
+      }
+      &_input {
+        position: relative;
+        &_icon {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 20px;
+          height: 20px;
+          svg {
+            width: 20px;
+            height: 20px;
+            stroke: #7e7d88;
+          }
+          .hide_one {
+            display: none;
+          }
+        }
+      }
+      &_p {
+        display: flex;
+        align-items: center;
+      }
+      &_footer {
+        text-align: center;
+        margin-top: 8px;
+        color: $red;
       }
     }
   }
