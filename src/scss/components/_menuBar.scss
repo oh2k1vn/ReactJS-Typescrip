@@ -1,68 +1,126 @@
-.menuBar {
-    width: 200px;
-    height: 100vh;
-    background-color: $bg-white;
+.MenuBar {
+  width: 401px;
+  background-color: $bg-white;
+  padding: 0 {
+    left: 24px;
+    right: 24px;
+    bottom: 29px;
+  }
+  &_top {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 38px;
+    &_icon {
+      background-color: #fff2e7;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
     img {
-        max-width: 80px;
-        max-height: 64px;
+      height: 100%;
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 50%;
+      margin: 0 {
+        left: 24px;
+        right: 8px;
+      }
+    }
+    &_title {
+      span {
+        font-size: $fz-12;
+        line-height: calc(18 / 12);
+        color: #7e7d88;
+      }
+      p {
+        font-weight: bold;
+        font-size: $fz-16;
+        line-height: calc(24 / 16);
+        color: #535261;
+      }
+    }
+  }
+  &_container {
+    p {
+      color: $bg-global;
+      font-weight: bold;
+      font-size: $fz-24;
+    }
+    &_item {
+      &_list {
         width: 100%;
-        height: 100%;
-        display: block;
-        margin: auto {
-            top: 32px;
-            bottom: 54px;
-        };
-    }
-    &_nav {
-        flex: 1;
-        &_li {
-            height: 48px;
-            &_a {
-                height: 100%;
-                margin:0 12px;
-                display: flex;
-                align-items: center;
-                border-radius: $border-radius;
-                transition: 0.2s linear;
-                svg {
-                    margin: 0 {
-                        left: 16px;
-                        right: 8px;
-                    };
-                }
-                span {
-                    font-size: $fz-16;
-                    font-weight: 600;
-                    line-height: calc(24/16);
-                    color: #7E7D88;
-                }
-                &:hover {
-                    background-color: #FF7506;
-                    svg {
-                        path {
-                            stroke: #fff;
-                        }
-                    }
-                    span {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-    }
-    .btn {
-        background-color: #FFF2E7;
-        display: block;
-        margin: auto {
-            bottom: 30px;
-        };
+        height: 83px;
         display: flex;
-        align-items: center;
-        color: $bg-global;
-        svg {
-            margin-right: 12px;
+        padding: 11px 16px;
+        box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+        border-radius: 12px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        &_center {
+          margin-right: 40px;
+          margin-left: 12px;
+          p {
+            color: #535261;
+            font-weight: 800;
+            font-size: 24px;
+          }
+          &_bottom {
+            display: flex;
+            align-items: center;
+            svg {
+              margin-right: 4px;
+            }
+            p {
+              color: $bg-global;
+              font-weight: 600;
+              font-size: 14px;
+            }
+          }
         }
+        &_right {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          &_top {
+            li {
+              list-style: circle;
+              font-size: 12px;
+              margin-bottom: 5px;
+            }
+          }
+          &_bottom {
+            li {
+              font-weight: bold;
+              font-size: 14px;
+              color: $bg-global;
+            }
+          }
+        }
+      }
     }
+  }
+  .sdp {
+    --theme-color: #ff7506 !important; /* violet color */
+    --disabled-color: #ff9138 !important;
+    width: 100%;
+  }
+
+  .sdp--month-name {
+    color: #ff7506 !important;
+  }
+  .sdp--square-btn__shadowed {
+    color: #ff7506 !important;
+  }
 }

@@ -9,11 +9,20 @@
 @import './components/login/resetPassword';
 
 // => user
-@import './components/user/myAccount';
-@import './components/user/user';
+@import './components/info/info';
+@import './components/info/user';
+
+// => siderBar
+@import './components/siderBar';
 
 // => menuBar
 @import './components/menuBar';
 
-// => headerBar
-@import './components/headerBar';
+// => Dashboard
+@import './components/Dashboard/dashboard';
+
+// => recharts
+@import './components/recharts/recharts';
+
+// => ThietBi
+@import './components/Thietbi/thietBi';

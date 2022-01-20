@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import banner_respass from "../../assets/images/banner/banner_respass.png";
-import logo from "../../assets/images/logo/logo_alta.svg";
+import banner_respass from "../assets/images/banner/banner_respass.png";
+import logo from "../assets/images/logo/logo_alta.svg";
 
-const forgotPassword = () => {
+const ForgotPassword = () => {
   return (
     <div className="forgotPassword">
       <div className="forgotPassword_left">
@@ -18,11 +19,17 @@ const forgotPassword = () => {
           </div> */}
           <div className="resetPassword">
             <p>Đặt lại mật khẩu</p>
-            <label className="label" htmlFor="">Mật khẩu</label>
+            <label className="resetPassword_label" htmlFor="">
+              Mật khẩu
+            </label>
             <input type="password" name="" id="" />
-            <label className="label" htmlFor="">Nhập lại mật khẩu</label>
+            <label className="resetPassword_label" htmlFor="">
+              Nhập lại mật khẩu
+            </label>
             <input type="password" name="" id="" />
-            <button className="btn">Xác nhận</button>
+            <Link to="/">
+              <button className="resetPassword_btn">Xác nhận</button>
+            </Link>
           </div>
         </form>
       </div>
@@ -33,4 +40,4 @@ const forgotPassword = () => {
   );
 };
 
-export default forgotPassword;
+export default ForgotPassword;

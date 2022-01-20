@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Logo from "../../assets/images/logo/logo_alta.svg";
-import Banner_login from "../../assets/images/banner/banner_login.png";
-import Error from "../../assets/images/icon_menuBar/Warning";
+import Logo from "../assets/images/logo/logo_alta.svg";
+import Banner_login from "../assets/images/banner/banner_login.png";
+import Error from "../assets/images/icon_menuBar/Warning";
 import { Link } from "react-router-dom";
 const Login = () => {
   const [hasacc, sethasacc] = useState(true);
@@ -16,7 +16,9 @@ const Login = () => {
     <div className="login">
       <div className="login_left">
         <form className="login_left_form">
-          <img src={Logo} alt="" />
+          <Link to="/info">
+            <img src={Logo} alt="" />
+          </Link>
 
           <label className="label">Tên đăng nhập *</label>
           <input type="text" className="input" />
@@ -30,7 +32,7 @@ const Login = () => {
             />
             <span
               className="login_left_form_input_icon"
-              onClick={()=> setShowPassword(!showPassword)}
+              onClick={() => setShowPassword(!showPassword)}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +74,11 @@ const Login = () => {
 
           {hasacc ? (
             <>
-              <Link to="/1">Quên mật khẩu?</Link>
-              <button className="btn" onClick={(e) => handleLogin(e)}>
+              <Link to="/ForgotPassword">Quên mật khẩu?</Link>
+              <button
+                className="login_left_form_btn"
+                onClick={(e) => handleLogin(e)}
+              >
                 Đăng nhập
               </button>
             </>
@@ -83,8 +88,10 @@ const Login = () => {
                 <Error />
                 <span>Sai mật khẩu hoặc tên đăng nhập</span>
               </p>
-              <button className="btn">Đăng nhập</button>
-              <p className="login_left_form_footer">Quên mật khẩu?</p>
+              <button className="login_left_form_btn">Đăng nhập</button>
+              <Link to="/ForgotPassword" className="login_left_form_footer">
+                Quên mật khẩu?
+              </Link>
             </>
           )}
         </form>
