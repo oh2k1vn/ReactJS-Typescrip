@@ -43,7 +43,7 @@ export const Menus = [
   },
   {
     name: "Thiết bị",
-    route: "/Thietbi",
+    route: "/Equiment",
     icon: (
       <svg
         width="20"
@@ -85,7 +85,7 @@ export const Menus = [
   },
   {
     name: "Dịch vụ",
-    route: "/Dichvu",
+    route: "/Service",
     icon: (
       <svg
         width="22"

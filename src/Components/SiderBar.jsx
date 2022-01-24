@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Link } from "react-router-dom";
 import Logout from "../assets/images/icon_menuBar/Logout";
 import logo from "../assets/images/logo/logo_alta.svg";

@@ -94,6 +94,8 @@ const Login = () => {
               </Link>
             </>
           )}
+
+          
         </form>
       </div>
       <div className="login_right">

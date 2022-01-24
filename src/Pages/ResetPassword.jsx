@@ -10,13 +10,7 @@ const ForgotPassword = () => {
       <div className="forgotPassword_left">
         <form className="forgotPassword_left_form">
           <img src={logo} alt="" />
-          {/* <p className="forgotPassword_left_form_top">Đặt lại mật khẩu</p>
-          <p className="forgotPassword_left_form_bottom">Vui lòng nhập Email để đặt lại mật khẩu của bạn*</p>
-          <input type="text" name="" id="" />
-          <div className="forgotPassword_left_form_btn">
-            <button className="btn active">Hủy</button>
-            <button className="btn">Tiếp tục</button>
-          </div> */}
+
           <div className="resetPassword">
             <p>Đặt lại mật khẩu</p>
             <label className="resetPassword_label" htmlFor="">
