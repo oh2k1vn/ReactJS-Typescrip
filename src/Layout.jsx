@@ -1,15 +1,18 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import AddEquiment from "./Components/Equiment/AddEquiment";
-import Baocao from "./Pages/Baocao";
 import Dashboard from "./Pages/Dashboard";
-import Service from "./Pages/Service";
-import Equiment from "./Pages/Equiment";
+import AddEquiment from "./Pages/Equiment/AddEquiment";
+import DetailEquiment from "./Pages/Equiment/DetailEquiment";
+import Equiment from "./Pages/Equiment/Equiment";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Info from "./Pages/Info";
+import Level from "./Pages/Level/Level";
 import Login from "./Pages/Login";
+import { default as Baocao, default as Report } from "./Pages/Report/Report";
 import ResetPassword from "./Pages/ResetPassword";
-import DetailEquiment from "./Components/Equiment/DetailEquiment";
+import AddService from "./Pages/Service/AddService";
+import DetailService from "./Pages/Service/DetailService";
+import Service from "./Pages/Service/Service";
 
 const Layout = () => {
   return (
@@ -22,8 +25,15 @@ const Layout = () => {
       <Route path="/Info" element={<Info />} />
       <Route path="/Baocao" element={<Baocao />} />
       <Route path="/Service" element={<Service />} />
+      <Route path="/AddService" element={<AddService />} />
       <Route path="/AddEquiment" element={<AddEquiment />} />
-      <Route path="/DetailEquiment" element={<DetailEquiment/>} />
+      <Route path="/DetailEquiment" element={<DetailEquiment />} />
+      <Route path="/DetailService" element={<DetailService />} />
+      <Route path="/Level" element={<Level />} />
+      <Route path="/Report" element={<Report />} />
+
+
+      <Route path="*" element={"404"} />
     </Routes>
   );
 };

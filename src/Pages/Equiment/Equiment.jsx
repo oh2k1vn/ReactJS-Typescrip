@@ -2,9 +2,9 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
-import Page from "../Components/Page";
-import Notification from "../assets/images/icon_menuBar/Notification";
-import SiderBar from "../Components/SiderBar";
+import Notification from "../../assets/images/icon_menuBar/Notification";
+import Page from "../../Components/Page";
+import SiderBar from "../../Components/SiderBar";
 
 const Equiment = () => {
   const optionsWork = ["Tất cả", "Hoạt động", "Ngừng hoạt động"];
@@ -17,50 +17,104 @@ const Equiment = () => {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Ngừng hoạt động",
+      Table_connection: "Mất kết Nối",
+      Table_status: "status_off",
+      Table_turn:"status_off",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_on",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Mất kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_off",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Ngừng hoạt động",
+      Table_connection: "Kết Nối",
+      Table_status: "status_off",
+      Table_turn:"status_on",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Mất kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_off",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_on",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Ngừng hoạt động",
+      Table_connection: "Kết Nối",
+      Table_status: "status_off",
+      Table_turn:"status_on",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_on",
+      Table_detail: "/",
+      Table_edit: "/",
     },
     {
       Table_name: "KIO_01",
       Table_equiment: "Kiosk",
       Table_IP: "192.168.1.10",
+      Table_work: "Hoạt động",
+      Table_connection: "Mất kết Nối",
+      Table_status: "status_on",
+      Table_turn:"status_off",
+      Table_detail: "/",
+      Table_edit: "/",
     },
   ];
   return (
-    <div style={{ display: "flex", position: "relative" }}>
+    <div style={{ display: "flex", minHeight: '100vh', overflow: 'hidden' }}>
       <SiderBar />
       <div className="Equiment">
         <div className="Equiment_header">
@@ -158,11 +212,11 @@ const Equiment = () => {
                   <td>{item.Table_name}</td>
                   <td>{item.Table_equiment}</td>
                   <td>{item.Table_IP}</td>
-                  <td>Demo</td>
-                  <td>Demo</td>
+                  <td><span className={item.Table_status}></span>{item.Table_work}</td>
+                  <td><span className={item.Table_turn}></span>{item.Table_connection}</td>
                   <td>Khám tĩnh mạch, Khám mắt...</td>
-                  <td>Chi iết</td>
-                  <td>Cập nhật</td>
+                  <td><Link to={item.Table_work}>Chi tiết</Link></td>
+                  <td><Link to={item.Table_edit}>Cập nhật</Link></td>
                 </tr>
               );
             })}

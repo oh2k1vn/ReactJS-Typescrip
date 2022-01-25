@@ -10,6 +10,7 @@ html,
 body {
   font-family: 'Nunito', sans-serif;
   background-color: $bg;
+  overflow: hidden;
 }
 ul,li {
   list-style: none;
@@ -27,4 +28,23 @@ img {
   background-color: $bg;
   justify-content: left;
   min-height: 100vh;
+}
+
+.status_off::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #E73F3F;
+  margin-right:4px;
+}
+.status_on::before {
+ content: '';
+ display: inline-block;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background-color: #35C75A;
+ margin-right:4px;
 }

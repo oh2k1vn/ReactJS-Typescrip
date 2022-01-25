@@ -134,7 +134,7 @@ export const Menus = [
   },
   {
     name: "Cấp số",
-    route: "/Capso",
+    route: "/Level",
     icon: (
       <svg
         width="20"
@@ -169,7 +169,7 @@ export const Menus = [
   },
   {
     name: "Báo cáo",
-    route: "/Baocao",
+    route: "/Report",
     icon: (
       <svg
         width="18"

@@ -1,35 +1,45 @@
-@import './global';
-@import './mixin';
-@import './variables';
-
+@import "./global";
+@import "./mixin";
+@import "./variables";
 
 // => login
-@import './components/login/login';
-@import './components/login/forgotPassword';
-@import './components/login/resetPassword';
+@import "./components/login/login";
+@import "./components/login/forgotPassword";
+@import "./components/login/resetPassword";
 
 // => user
-@import './components/info/info';
-@import './components/info/user';
+@import "./components/info/info";
+@import "./components/info/user";
 
 // => siderBar
-@import './components/siderBar';
+@import "./components/siderBar";
 
 // => menuBar
-@import './components/menuBar';
+@import "./components/menuBar";
 
 // => Dashboard
-@import './components/Dashboard/dashboard';
+@import "./components/Dashboard/dashboard";
 
 // => recharts
-@import './components/recharts/recharts';
+@import "./components/recharts/recharts";
 
 // => Equiment
-@import './components/Equiment/equiment';
-@import './components/Equiment/addEuiment';
-@import './components/Equiment/detailEquiment';
+@import "./components/Equiment/equiment";
+@import "./components/Equiment/addEuiment";
+@import "./components/Equiment/detailEquiment";
 
-// => page 
-@import './components/page';
+// => page
+@import "./components/page";
 
+// => Service
+@import "./components/Service/service";
+@import "./components/Service/addService";
+@import "./components/Service/detailService";
 
+// => Level
+@import "./components/Level/level";
+@import "./components/Level/detailLevel";
+@import "./components/Level/addlevel";
+
+// => Report
+@import "./components/Report/report";

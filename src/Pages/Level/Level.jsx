@@ -1,7 +1,7 @@
 import React from "react";
-import SiderBar from "../Components/SiderBar";
+import SiderBar from "../../Components/SiderBar";
 
-const Capso = () => {
+const Level = () => {
   return (
     <div style={{ display: "flex" }}>
       <SiderBar />
@@ -10,4 +10,4 @@ const Capso = () => {
   );
 };
 
-export default Capso;
+export default Level;

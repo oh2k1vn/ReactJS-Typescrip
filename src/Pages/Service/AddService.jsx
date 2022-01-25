@@ -3,17 +3,17 @@ import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
 import Notification from "../../assets/images/icon_menuBar/Notification";
-import SiderBar from "../SiderBar";
+import SiderBar from "../../Components/SiderBar";
 
-const AddEquiment = () => {
+const AddService = () => {
   const options = ["Kiosk", "Display counter"];
 
   return (
     <div style={{ display: "flex", position: "relative" }}>
       <SiderBar />
-      <div className="AddEquiment">
-        <div className="Equiment_header">
-          <div className="Equiment_header_left">
+      <div className="AddService">
+        <div className="Service_header">
+          <div className="Service_header_left">
             <p style={{ color: "#7E7D88" }}>Thiết bị</p>
             <svg
               width="20"
@@ -42,26 +42,26 @@ const AddEquiment = () => {
             </svg>
             <p style={{ color: "#FF7506" }}>Thêm thiết bị</p>
           </div>
-          <div className="Equiment_header_right">
-            <div className="Equiment_header_right_icon">
+          <div className="Service_header_right">
+            <div className="Service_header_right_icon">
               <Notification />
             </div>
             <img
               src="https://www.dungplus.com/wp-content/uploads/2019/12/girl-xinh-1-480x600.jpg"
               alt=""
             />
-            <div className="Equiment_header_right_title">
+            <div className="Service_header_right_title">
               <span>Xin chào</span>
               <p>Lê Quỳnh Ái Vân</p>
             </div>
           </div>
         </div>
-        <div className="AddEquiment_body">
+        <div className="AddService_body">
           <p>Quản lý thiết bị</p>
-          <div className="AddEquiment_body_content">
+          <div className="AddService_body_content">
             <p>Thông tin thiết bị</p>
-            <div className="AddEquiment_body_content_layout">
-              <div className="AddEquiment_body_content_layout_items">
+            <div className="AddService_body_content_layout">
+              <div className="AddService_body_content_layout_items">
                 <label>Mã thiết bị: *</label>
                 <input
                   type="text"
@@ -84,7 +84,7 @@ const AddEquiment = () => {
                   placeholder="Nhập địa chỉ IP"
                 />
               </div>
-              <div className="AddEquiment_body_content_layout_items">
+              <div className="AddService_body_content_layout_items">
                 <label>Loại Thiết bị: *</label>
                 <Dropdown
                   options={options}
@@ -108,9 +108,11 @@ const AddEquiment = () => {
             <span>* Là trường thông tin bắt buộc</span>
           </div>
         </div>
-        <div className="AddEquiment_btn">
-          <button className="AddEquiment_btn_active">Hủy bỏ</button>
-          <Link to="/DetailEquiment">
+        <div className="AddService_btn">
+          <Link to="/Service">
+            <button className="AddService_btn_active">Hủy bỏ</button>
+          </Link>
+          <Link to="/DetailService">
             <button>Thêm thiết bị</button>
           </Link>
         </div>
@@ -119,4 +121,4 @@ const AddEquiment = () => {
   );
 };
 
-export default AddEquiment;
+export default AddService;

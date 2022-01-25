@@ -1,8 +1,8 @@
 import React from "react";
 import Notification from "../../assets/images/icon_menuBar/Notification";
-import SiderBar from "../SiderBar";
+import SiderBar from "../../Components/SiderBar";
 
-const DetailEquiment = () => {
+const DetailService = () => {
   const lists = [
     {
       MTB: "KIO_01",
@@ -18,9 +18,9 @@ const DetailEquiment = () => {
   return (
     <div style={{ display: "flex", position: "relative" }}>
       <SiderBar />
-      <div className="DetailEquiment">
-        <div className="Equiment_header">
-          <div className="Equiment_header_left">
+      <div className="DetailService">
+        <div className="Service_header">
+          <div className="Service_header_left">
             <p style={{ color: "#7E7D88" }}>Thiết bị</p>
             <svg
               width="20"
@@ -49,28 +49,28 @@ const DetailEquiment = () => {
             </svg>
             <p style={{ color: "#FF7506" }}>Chi tiết thiết bị</p>
           </div>
-          <div className="Equiment_header_right">
-            <div className="Equiment_header_right_icon">
+          <div className="Service_header_right">
+            <div className="Service_header_right_icon">
               <Notification />
             </div>
             <img
               src="https://www.dungplus.com/wp-content/uploads/2019/12/girl-xinh-1-480x600.jpg"
               alt=""
             />
-            <div className="Equiment_header_right_title">
+            <div className="Service_header_right_title">
               <span>Xin chào</span>
               <p>Lê Quỳnh Ái Vân</p>
             </div>
           </div>
         </div>
-        <div className="DetailEquiment_body">
+        <div className="DetailService_body">
           <p>Quản lý thiết bị</p>
-          <div className="DetailEquiment_body_content">
+          <div className="DetailService_body_content">
             <p>Thông tin thiết bị</p>
             {lists.map((item, index) => {
               return (
-                <div className="DetailEquiment_body_content_flex" key={index}>
-                  <div className="DetailEquiment_body_content_flex_item">
+                <div className="DetailService_body_content_flex" key={index}>
+                  <div className="DetailService_body_content_flex_item">
                   </div>
                 </div>
               );
@@ -82,4 +82,4 @@ const DetailEquiment = () => {
   );
 };
 
-export default DetailEquiment;
+export default DetailService;

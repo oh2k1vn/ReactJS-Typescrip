@@ -6,8 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 40px;
+    height: 88px;
     &_left {
       display: flex;
       align-items: center;
@@ -133,8 +132,12 @@
       filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
       tr {
         td {
-          padding: 14px 8px;
+          padding: 14px 0 14px 17px;
           font-size: 14px;
+          a {
+            color: #4277FF;
+            text-decoration: underline;
+          }
         }
         th {
           background-color: #ff9138;
