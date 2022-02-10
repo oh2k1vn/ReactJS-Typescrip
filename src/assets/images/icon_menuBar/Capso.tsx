@@ -1,6 +1,6 @@
 import React from "react";
 
-const Capso = ({ className }) => {
+const Capso = () => {
   return (
       <svg
         width="20"
@@ -8,7 +8,6 @@ const Capso = ({ className }) => {
         viewBox="0 0 20 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={className}
       >
         <path
           d="M1.6665 14.166L9.99984 18.3327L18.3332 14.166"

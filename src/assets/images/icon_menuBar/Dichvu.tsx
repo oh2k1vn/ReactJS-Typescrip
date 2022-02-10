@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dichvu = ({ className }) => {
+const Dichvu = () => {
   return (
       <svg
         width="22"
@@ -8,7 +8,6 @@ const Dichvu = ({ className }) => {
         viewBox="0 0 22 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={className}
       >
         <circle cx="4.57986" cy="14.4016" r="0.708276" fill="#A9A9B0" />
         <circle cx="6.9407" cy="14.4016" r="0.708276" fill="#A9A9B0" />

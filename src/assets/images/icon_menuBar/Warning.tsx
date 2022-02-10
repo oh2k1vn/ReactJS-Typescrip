@@ -1,8 +1,8 @@
 import React from "react";
 
-const Warning = ({ className }) => {
+const Warning = () => {
   return (
-    <span className={className}>
+    <span >
       <svg
         width="21"
         height="21"

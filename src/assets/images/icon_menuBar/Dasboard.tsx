@@ -1,6 +1,6 @@
 import React from "react";
 
-const Dasboard = ({ className }) => {
+const Dasboard = () => {
   return (
       <svg
         width="20"
@@ -8,7 +8,6 @@ const Dasboard = ({ className }) => {
         viewBox="0 0 20 20"
         fill="#fff"
         xmlns="http://www.w3.org/2000/svg"
-        className={className}
       >
         <path
           d="M18.3333 9.08268V3.41602C18.3333 2.16602 17.8 1.66602 16.475 1.66602H13.1083C11.7833 1.66602 11.25 2.16602 11.25 3.41602V9.08268C11.25 10.3327 11.7833 10.8327 13.1083 10.8327H16.475C17.8 10.8327 18.3333 10.3327 18.3333 9.08268Z"

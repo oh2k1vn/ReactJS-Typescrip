@@ -1,8 +1,8 @@
 import React from "react";
 
-const Logout = ({ className }) => {
+const Logout = () => {
   return (
-    <span className={className}>
+    <span >
       <svg
         width="20"
         height="20"

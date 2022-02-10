@@ -1,6 +1,6 @@
 import React from "react";
 
-const Vertical = ({ className }) => {
+const Vertical = () => {
   return (
       <svg
         width="16"
@@ -8,7 +8,6 @@ const Vertical = ({ className }) => {
         viewBox="0 0 16 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={className}
       >
         <path
           d="M9.99984 16.6667C10.4601 16.6667 10.8332 16.2936 10.8332 15.8333C10.8332 15.3731 10.4601 15 9.99984 15C9.5396 15 9.1665 15.3731 9.1665 15.8333C9.1665 16.2936 9.5396 16.6667 9.99984 16.6667Z"
