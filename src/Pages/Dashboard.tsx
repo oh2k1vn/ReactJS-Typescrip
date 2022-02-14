@@ -1,33 +1,28 @@
-import React from "react";
-import { ITEMS } from "../assets/JsonData/Dashboarditem";
-import DashboardItem from "../Components/DashboardItem";
-import MenuBar from "../Components/menuBar/MenuBar";
-import Recharts from "../Components/Recharts";
-import SiderBar from "../Components/SiderBar";
+import React from 'react';
+import { DashboardData } from '../components/DashboardData';
+import MenuBar from '../components/MenuBar';
+import Recharts from '../components/Recharts';
+import SubDashboard from '../components/SubDashboard';
 
 const Dashboard = () => {
   return (
-    <div style={{ display: "flex", minHeight: '100vh', overflow: 'hidden' }}>
-      <SiderBar/>
+    <div style={{display:'flex'}}>
+
       <div className="Dashboard">
         <p className="Dashboard_p">Dashboard</p>
         <div className="Dashboard_item">
-          {ITEMS.map((item, index) => {
+          {DashboardData.map((item, index) => {
             return (
-              <DashboardItem
-                icon={item.icon}
-                title={item.title}
-                text={item.text}
-                img={item.img}
-              />
+              <SubDashboard item={item} key={index}/>
             );
           })}
         </div>
         <Recharts />
       </div>
-      <MenuBar />
+      <MenuBar/>
     </div>
-  );
-};
 
-export default Dashboard;
+  )
+}
+
+export default Dashboard

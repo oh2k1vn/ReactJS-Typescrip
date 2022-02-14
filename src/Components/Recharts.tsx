@@ -105,7 +105,7 @@ const Recharts = () => {
 
   const options = ["Ngày", "Tuần", "Tháng"];
 
-  const handleDropdownValue = (e) => {
+  const handleDropdownValue = (e:any) => {
     if (e.value === "Ngày") {
       setDataChart(data);
     } else if (e.value === "Tuần") {

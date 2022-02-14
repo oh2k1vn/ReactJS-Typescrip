@@ -1,0 +1,117 @@
+.AddEquiment {
+    justify-content: center;
+    margin-left: 24px;
+    flex: 1;
+    &_body {
+      width: 1152px;
+      p {
+        font-weight: bold;
+        font-size: 24px;
+        color: #ff7506;
+        margin-bottom: 16px;
+      }
+      &_content {
+        background-color: #fff;
+        padding: 16px 24px;
+        border-radius: 16px;
+        box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+        width: 1152px;
+        height: 550px;
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 30px;
+          color: #ff7506;
+          margin-bottom: 4px;
+        }
+        label {
+          font-weight: 600;
+          font-size: 16px;
+          color: #282739;
+          margin-top: 16px;
+          margin-bottom: 8px;
+          display: block;
+        }
+        input {
+          @include input;
+          height: 44px;
+          width: 100%;
+          font-size: 16px;
+        }
+        span {
+          margin-top: 18px;
+          font-size: 14px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          color: #7e7d88;
+        }
+        &_layout {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &_items {
+            width: 100%;
+            width: 540px;
+            label {
+              font-weight: 600;
+              font-size: 16px;
+              color: #282739;
+              margin-top: 16px;
+              margin-bottom: 8px;
+              display: block;
+            }
+            input {
+              @include input;
+              height: 44px;
+              width: 100%;
+              font-size: 16px;
+            }
+            .Dropdown-control {
+              width: 100%;
+              background: #ffffff !important;
+              border: 1.5px solid #d4d4d7 !important;
+              border-radius: 8px !important;
+            }
+  
+            .Dropdown-arrow {
+              border-color: #ff7506 transparent #ff7506 !important;
+              top: 17px !important;
+              margin-top: 0;
+            }
+            .Dropdown-menu {
+              border-radius: 8px !important;
+              top: 110% !important;
+              padding: 8px 0;
+            }
+            .Dropdown-option:hover {
+              background: #fff2e7 !important;
+            }
+  
+            .Dropdown-option.is-selected {
+              background: #fff2e7 !important;
+            }
+            .Dropdown-placeholder {
+              font-size: 16px;
+              color: #a9a9b0;
+            }
+          }
+        }
+      }
+    }
+    &_btn {
+      width: 1152px;
+      text-align: center;
+      margin-top: 24px;
+      .AddEquiment_btn_active {
+        @include btn;
+        background: #fff2e7;
+        color: #ff9138;
+        border: 1.5px solid #ff9138;
+        margin-right: 32px;
+      }
+      button {
+        @include btn;
+      }
+    }
+  }
