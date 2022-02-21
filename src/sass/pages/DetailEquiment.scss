@@ -1,23 +1,75 @@
 .DetailEquiment {
-    flex: 1;
-    margin-left: 24px;
+  flex: 1;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
   &_body {
-    p {
+    &_p {
       font-weight: bold;
       font-size: 24px;
       color: #ff7506;
       margin-bottom: 16px;
     }
     &_content {
-        padding: 16px 24px;
+      padding: 16px 24px;
       background: #ffffff;
       width: 1112px;
       height: 604px;
       box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
       border-radius: 16px;
-      p {
+
+      &_title {
+        font-weight: bold;
+        line-height: 30px;
+        color: #ff7506;
         font-size: 20px;
         margin-bottom: 20px;
+      }
+      &_item {
+        display: flex;
+        table {
+          text-align: left;
+          tr {
+            th {
+             width: 10rem;
+             height: 40px;
+            }
+            td {
+              color: #535261;
+            }
+          }
+          &:nth-child(1) {
+            margin-right: 326px;
+          }
+        }
+      }
+    }
+    h4 {
+      margin: 16px 0 8px 0;
+    }
+    span {
+      color: #535261;
+      font-size: 16px;
+    }
+  }
+  .DetailEquiment_icon {
+    position: absolute;
+    width: 80px;
+    height: 94px;
+    right: 0;
+    top: 18%;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 4px;
+      background: #fff2e7;
+      box-shadow: 0px 0px 6px #e7e9f2;
+      border-radius: 8px 0px 0px 8px;
+      p {
+        color: #FF7506;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
       }
     }
   }

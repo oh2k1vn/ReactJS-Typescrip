@@ -1,6 +1,5 @@
 .AddEquiment {
     justify-content: center;
-    margin-left: 24px;
     flex: 1;
     &_body {
       width: 1152px;
@@ -102,7 +101,7 @@
     &_btn {
       width: 1152px;
       text-align: center;
-      margin-top: 24px;
+      margin-top: 22px;
       .AddEquiment_btn_active {
         @include btn;
         background: #fff2e7;

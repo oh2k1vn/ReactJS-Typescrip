@@ -9,7 +9,10 @@ type SubSilderLink = {
 const SubSilderBar: FC<SubSilderLink> = ({ item }) => {
   return (
     <>
-      <Link to={item.route} className={"menuBar_nav_a "}>
+      <Link
+        to={item.route}
+        className="menuBar_nav_a"
+      >
         <div className="menuBar_nav_a_item">
           <div className={`menuBar_nav_a_item-inner`}>
             {item.icon}

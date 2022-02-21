@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import DatePicker from "sassy-datepicker";
-import { MenuBarData } from "./MenuBarData";
-import SubMenuBar from "./SubMenuBar";
+import {MenuBarData} from "./MenuBarData";
+import SubMenuBar  from "./SubMenuBar";
+
 
 const MenuBar = () => {
   const [date, setDate] = useState(new Date());

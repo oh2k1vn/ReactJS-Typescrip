@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../asset/img/logo_alta.svg";
-import { SilderBarData } from "../components/SilderBarData";
-import SubSilderBar from "../components/SubSilderBar";
+import {SilderBarData} from "../Components/SilderBarData";
+import SubSilderBar from "../Components/SubSilderBar";
 
 const SilderBar = () => {
   return (

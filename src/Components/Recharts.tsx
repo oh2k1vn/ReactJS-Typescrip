@@ -140,7 +140,7 @@ const Recharts = () => {
 
       <div className="Recharts_block">
         <AreaChart
-          width={754}
+          width={865}
           height={373}
           data={dataChart}
           margin={{

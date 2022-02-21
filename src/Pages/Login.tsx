@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import Logo from "../asset/img/logo_alta.svg";
-import Banner_logo from "../asset/img/banner/banner_login.png";
+import React from "react";
 import { Link } from "react-router-dom";
-import firebase from 'firebase/compat/app';
+import Banner_logo from "../asset/img/banner/banner_login.png";
+import Logo from "../asset/img/logo_alta.svg";
 
 const Login = () => {
-
-
   return (
     <div>
       <div className="form_login">
@@ -20,7 +17,9 @@ const Login = () => {
             <input type="password" placeholder="lequynhaivan01" />
             <Link to="/forgotPassword">Quên mật khẩu?</Link>
 
-            <button>Đăng nhập</button>
+            <Link to="/admin" className="link">
+              Đăng nhập
+            </Link>
           </form>
         </div>
         <div className="form_login_banner">

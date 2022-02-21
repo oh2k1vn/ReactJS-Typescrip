@@ -2,7 +2,7 @@ import React from "react";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
-import Page from "../components/Page";
+import Page from "../Components/Page";
 
 const Equiment = () => {
   const optionsWork = ["Tất cả", "Hoạt động", "Ngừng hoạt động"];
@@ -250,7 +250,7 @@ const Equiment = () => {
         </div>
       </div>
       <div className="Equiment_icon">
-        <Link to="/AddEquiment">
+        <Link to="AddEquiment">
           <svg
             width="28"
             height="28"

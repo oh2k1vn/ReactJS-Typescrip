@@ -1,8 +1,8 @@
 import React from 'react';
-import { DashboardData } from '../components/DashboardData';
-import MenuBar from '../components/MenuBar';
-import Recharts from '../components/Recharts';
-import SubDashboard from '../components/SubDashboard';
+import SubDashboard from '../Components/SubDashboard';
+import Recharts from '../Components/Recharts';
+import MenuBar from '../Components/MenuBar';
+import {DashboardData} from "../Components/DashboardData";
 
 const Dashboard = () => {
   return (
