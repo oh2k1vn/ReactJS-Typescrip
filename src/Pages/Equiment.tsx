@@ -111,6 +111,8 @@ const Equiment = () => {
       Table_edit: "/",
     },
   ];
+
+  
   return (
     <>
       <div className="Equiment">

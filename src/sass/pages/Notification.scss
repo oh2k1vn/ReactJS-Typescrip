@@ -1,0 +1,114 @@
+
+ .Info_top_right_icon {
+  background-color: #fff2e7;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .noti {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_icon {
+      position: absolute;
+      top: 33px;
+      right: 0;
+      width: 360px;
+      box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+      border-radius: 10px;
+      z-index: 99;
+      background-color: #fff;
+      transition: .3s linear;
+  
+      opacity: 0;
+      visibility: hidden;
+      h3 {
+        width: 100%;
+        height: 48px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #ff9138;
+        padding: 9px 24px;
+      }
+      &_item {
+        padding: 0 24px;
+        height: calc(526px - 48px);
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+  
+        &_block {
+          padding: 0 {
+            top: 16px;
+            bottom: 12px;
+          };
+          border-bottom: 1.5px solid #d4d4d7;
+          p {
+            color: #bf5805;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+          }
+          span {
+            white-space: nowrap;
+            margin-top: 4px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #535261;
+          }
+        }
+      }
+    }
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 340px;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+  
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #ffc89b;
+      border-radius: 43px;
+    }
+  
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ffc89b;
+    }
+  
+    svg::before {
+      top: 0;
+      position: absolute;
+      background-color: red;
+      content: '';
+      width: 400px;
+      height: 500px;
+    }
+    svg:hover ~ .noti_icon {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+

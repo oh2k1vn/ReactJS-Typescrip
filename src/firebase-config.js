@@ -1,16 +1,16 @@
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import firebase from "firebase/app";
+import 'firebase/auth';
+import 'firebase/firestore';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyA7JkwZBWgEuTY8qufTdqvuY3bSJrunFkc",
-  authDomain: "reactjs-12fb1.firebaseapp.com",
-  projectId: "reactjs-12fb1",
-  storageBucket: "reactjs-12fb1.appspot.com",
-  messagingSenderId: "621245880565",
-  appId: "1:621245880565:web:85cdd4b8a399f787ff0dbc",
-  measurementId: "G-P8XW2SKSJ0"
-};
+firebase.initializeApp({
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+});
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export default firebase;

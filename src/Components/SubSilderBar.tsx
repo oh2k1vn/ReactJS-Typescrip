@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SidebarItem } from "../models/SidebarItem";
 
 type SubSilderLink = {
@@ -8,19 +8,16 @@ type SubSilderLink = {
 
 const SubSilderBar: FC<SubSilderLink> = ({ item }) => {
   return (
-    <>
-      <Link
+      <NavLink
         to={item.route}
         className="menuBar_nav_a"
+        style={({ isActive }) => ({ background: isActive ? "#FF7506" : "#fff" })}
       >
         <div className="menuBar_nav_a_item">
-          <div className={`menuBar_nav_a_item-inner`}>
             {item.icon}
             <span>{item.name}</span>
-          </div>
         </div>
-      </Link>
-    </>
+      </NavLink>
   );
 };
 

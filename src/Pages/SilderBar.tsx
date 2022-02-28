@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Logo from "../asset/img/logo_alta.svg";
-import {SilderBarData} from "../Components/SilderBarData";
+import { SilderBarData } from "../Components/SilderBarData";
 import SubSilderBar from "../Components/SubSilderBar";
 
 const SilderBar = () => {
+
+ 
   return (
     <div className="container">
       <div className="menuBar">
@@ -22,7 +25,7 @@ const SilderBar = () => {
           }
 
         </nav>
-        <button className="menuBar_btn">
+        <button className="menuBar_btn" >
           <svg
             width="20"
             height="20"

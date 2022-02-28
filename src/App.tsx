@@ -1,15 +1,21 @@
-import React from "react";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import React, { FC, useEffect } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import Login from "./Pages/Login";
-import SilderBar from "./Pages/SilderBar";
-import User from "./Pages/User";
-import ResetPassword from "./Pages/ResetPassword";
-import ForgotPassword from "./Pages/ForgotPassword";
-import Equiment from "./Pages/Equiment";
+import AddEquiment from "./Pages/AddEquiment";
 import Dashboard from "./Pages/Dashboard";
 import DetailEquiment from "./Pages/DetailEquiment";
-import AddEquiment from "./Pages/AddEquiment";
+import Equiment from "./Pages/Equiment";
+import ForgotPassword from "./Pages/ForgotPassword";
+import Login from "./Pages/Login";
+import ResetPassword from "./Pages/ResetPassword";
+import SilderBar from "./Pages/SilderBar";
 import UpdateEquiment from "./Pages/UpdateEquiment";
+import User from "./Pages/User";
+
+
+
+
 
 function Layout() {
   return (
@@ -21,7 +27,17 @@ function Layout() {
     </div>
   );
 }
-const App = () => {
+
+function Error() {
+  return (
+    <>
+      <h1>404 - ERROR</h1>
+    </>
+  );
+}
+const App: FC = () => {
+
+  
   return (
     <Routes>
       <Route path="/" element={<Login />} />
@@ -30,11 +46,12 @@ const App = () => {
       <Route path="/admin" element={<Layout />}>
         <Route index element={<User />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="Equiment" element={<Equiment />} />
+        <Route path="Equiment" element={<Equiment />}></Route>
         <Route path="Equiment/AddEquiment" element={<AddEquiment />} />
         <Route path="Equiment/DetailEquiment" element={<DetailEquiment />} />
-        <Route path="Equiment/UpdateEquiment" element={<UpdateEquiment/>}/>
+        <Route path="Equiment/UpdateEquiment" element={<UpdateEquiment />} />
       </Route>
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 };

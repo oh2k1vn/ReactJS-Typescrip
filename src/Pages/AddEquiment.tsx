@@ -8,7 +8,6 @@ const AddEquiment = () => {
 
   return (
     <div className="AddEquiment">
-
       <div className="Equiment_header">
         <div className="Equiment_header_left">
           <p style={{ color: "#7E7D88" }}>Thiết bị</p>
@@ -68,7 +67,7 @@ const AddEquiment = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="AddEquiment_body">
         <p>Quản lý thiết bị</p>
         <div className="AddEquiment_body_content">
