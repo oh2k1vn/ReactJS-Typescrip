@@ -3,6 +3,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 import AddEquiment from "./Pages/Equiment/AddEquiment";
 import DetailEquiment from "./Pages/Equiment/DetailEquiment";
+import Equiment from "./Pages/Equiment/Index";
 import UpdateEquiment from "./Pages/Equiment/UpdateEquiment";
 import DetailLevel from "./Pages/Level/DetailLevel";
 import Level from "./Pages/Level/Index";
@@ -12,6 +13,7 @@ import Login from "./Pages/login/Login";
 import ResetPassword from "./Pages/login/ResetPassword";
 import Report from "./Pages/Report";
 import Service from "./Pages/Service/Index";
+import Setting from "./Pages/Setting/Index";
 import SilderBar from "./Pages/SilderBar";
 import User from "./Pages/User";
 
@@ -42,7 +44,7 @@ const App: FC = () => {
       <Route path="/admin" element={<Layout />}>
         <Route index element={<User />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="Equiment" element={<AddEquiment />} />
+        <Route path="Equiment" element={<Equiment />} />
         <Route path="Equiment/AddEquiment" element={<AddEquiment />} />
         <Route path="Equiment/DetailEquiment" element={<DetailEquiment />} />
         <Route path="Equiment/UpdateEquiment" element={<UpdateEquiment />} />
@@ -51,6 +53,7 @@ const App: FC = () => {
         <Route path="Level" element={<InputLevel />} />
         <Route path="Level" element={<DetailLevel />} />
         <Route path="Report" element={<Report />} />
+        <Route path="Setting" element={<Setting />} />
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>

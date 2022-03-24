@@ -1,11 +1,15 @@
 import React from "react";
-import Dropdown from "react-dropdown";
+
 import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
+import Input from "../../Components/inputFields/Input";
+import Select from "../../Components/inputFields/Select";
 
 const AddEquiment = () => {
   const options = ["Kiosk", "Display counter"];
+
+  const defaultOption = options[0];
 
   return (
     <div className="AddEquiment">
@@ -17,34 +21,22 @@ const AddEquiment = () => {
           <p>Thông tin thiết bị</p>
           <div className="AddEquiment_body_content_layout">
             <div className="AddEquiment_body_content_layout_items">
-              <label>Mã thiết bị: *</label>
-              <input type="text" name="" id="" placeholder="Nhập mã thiết bị" />
-              <label>Tên thiết bị: *</label>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Nhập tên thiết bị"
-              />
-              <label>Địa chỉ IP: *</label>
-              <input type="text" name="" id="" placeholder="Nhập địa chỉ IP" />
+              <Input label="Mã thiết bị: *" text="Nhập mã thiết bị" />
+              <Input label="Tên thiết bị: *" text="Nhập tên thiết bị" />
+              <Input label="Địa chỉ IP: *" text="Nhập địa chỉ IP" />
             </div>
             <div className="AddEquiment_body_content_layout_items">
-              <label>Loại Thiết bị: *</label>
-              <Dropdown
+              <Select
+                label="Loại Thiết bị: *"
                 options={options}
-                className="chartDropdown"
-                //   value={defaultOption}
-                placeholder="Chọn loại thiết bị"
+                value={defaultOption}
+                text="Chọn loại thiết bị"
               />
-              <label>Tên đăng nhập: *</label>
-              <input type="text" name="" id="" placeholder="Nhập tài khoản" />
-              <label>Mật khẩu: *</label>
-              <input type="text" name="" id="" placeholder="Nhập mật khẩu" />
+              <Input label="Tên đăng nhập: *" text="Nhập Tài khoản" />
+              <Input label="Mật khẩu: *" text="Nhập mật khẩu" />
             </div>
           </div>
-          <label>Dịch vụ sử dụng: *</label>
-          <input type="text" name="" id="" placeholder="Nhập dịch vụ sử dụng" />
+          <Input label="Dịch vụ sử dụng: *" text="Nhập dịch vụ sử dụng" />
           <span>* Là trường thông tin bắt buộc</span>
         </div>
       </div>

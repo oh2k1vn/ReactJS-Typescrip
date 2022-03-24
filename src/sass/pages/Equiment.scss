@@ -1,59 +1,9 @@
 .Equiment {
   justify-content: center;
   flex: 1;
-  &_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 86px;
-    &_left {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 20px;
-    }
-    &_right {
-      display: flex;
-      align-items: center;
-      &_icon {
-        background: #fff2e7;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        position: relative;
-        svg {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-      img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-left: 24px;
-        margin-right: 8px;
-      }
-      &_title {
-        margin-right: 64px;
-        span {
-          font-size: 12px;
-          line-height: 18px;
-          color: #7e7d88;
-        }
-        p {
-          font-weight: bold;
-          font-size: 16px;
-          line-height: 24px;
-          color: #535261;
-        }
-      }
-    }
-  }
   &_body {
     flex: 1;
-    width: 1112px;
+    max-width: 1112px;
     p {
       font-weight: bold;
       font-size: 24px;
@@ -64,6 +14,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 1112px;
       &_left {
         display: flex;
         &_item {

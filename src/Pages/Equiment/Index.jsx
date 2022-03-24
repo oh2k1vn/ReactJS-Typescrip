@@ -1,16 +1,18 @@
 import React from "react";
-import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
+import Search from "../../Components/inputFields/Search";
+import Select from "../../Components/inputFields/Select";
 import Page from "../../Components/Page";
 
-const Index = (props) => {
-  const { title } = props;
-
+const Index = () => {
   const optionsWork = ["Tất cả", "Hoạt động", "Ngừng hoạt động"];
-  const defaultOption = options[0];
-  const options = ["Tất cả", "kết nối", "Mất kết nối"];
+  const listOptions = ["Tất cả", "kết nối", "Mất kết nối"];
+
+  const defaultOption = optionsWork[0];
+
+  const demotOption = listOptions[0];
 
   const EquimentTable = [
     {
@@ -117,53 +119,29 @@ const Index = (props) => {
   return (
     <>
       <div className="Equiment">
-        <Header title="Thiết bị" />
+        <Header />
         <div className="Equiment_body">
           <p>Danh sách thiết bị</p>
           <div className="Equiment_body_input">
             <div className="Equiment_body_input_left">
               <div className="Equiment_body_input_left_item">
-                <span className="span">Trạng Thái hoạt động</span>
-                <Dropdown
+                <Select
+                  label="Trạng Thái hoạt động"
                   options={optionsWork}
-                  className="chartDropdown"
                   value={defaultOption}
-                  placeholder="Select an option"
+                  text="Select an option"
                 />
               </div>
               <div className="Equiment_body_input_left_item">
-                <span className="span">Trạng thái kết nối</span>
-                <Dropdown
-                  options={options}
-                  className="chartDropdown"
-                  value={defaultOption}
-                  placeholder="Select an option"
+                <Select
+                  label="Trạng thái kết nối"
+                  options={listOptions}
+                  value={demotOption}
+                  text="Select an option"
                 />
               </div>
             </div>
-            <div className="Equiment_body_input_right">
-              <span className="span">Từ khóa</span>
-              <input
-                type="search"
-                name=""
-                id=""
-                placeholder="Nhập từ khóa ..."
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
+            <Search />
           </div>
           <table className="table">
             <thead>
