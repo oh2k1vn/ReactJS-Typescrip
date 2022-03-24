@@ -1,13 +1,21 @@
 import React from "react";
-import Dropdown from "react-dropdown";
-import "react-dropdown/style.css";
 import { Link } from "react-router-dom";
 
-const AddEquiment = () => {
-  const options = ["Kiosk", "Display counter"];
-
+const DetailEquiment = () => {
+  const lists = [
+    {
+      MTB: "KIO_01",
+      Name: "Kiosk",
+      IP: "128.172.308",
+      Type: "Kiosk",
+      login: "Linhkyo011",
+      pass: "CMS",
+      title:
+        "Khám tim mạch, Khám sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi họng, Khám hô hấp, Khám tổng quát.",
+    },
+  ];
   return (
-    <div className="AddEquiment">
+    <div className="DetailEquiment">
       <div className="Equiment_header">
         <div className="Equiment_header_left">
           <p style={{ color: "#7E7D88" }}>Thiết bị</p>
@@ -36,7 +44,7 @@ const AddEquiment = () => {
               fill="#7E7D88"
             />
           </svg>
-          <p style={{ color: "#FF7506" }}>Thêm thiết bị</p>
+          <p style={{ color: "#FF7506" }}>Chi tiết thiết bị</p>
         </div>
         <div className="Equiment_header_right">
           <div className="Equiment_header_right_icon">
@@ -67,54 +75,76 @@ const AddEquiment = () => {
           </div>
         </div>
       </div>
+      <div className="DetailEquiment_body">
+        <p className="DetailEquiment_body_p">Quản lý thiết bị</p>
+        <div className="DetailEquiment_body_content">
+          <p className="DetailEquiment_body_content_title">
+            Thông tin thiết bị
+          </p>
+          {lists.map((item, index) => {
+            return (
+              <div className="DetailEquiment_body_content_item" key={index}>
+                <table>
+                  <tr>
+                    <th>Mã thiết bị:</th>
+                    <td>{item.MTB}</td>
+                  </tr>
+                  <tr>
+                    <th>Tên thiết bị:</th>
+                    <td>{item.Name}</td>
+                  </tr>
+                  <tr>
+                    <th>Địa chỉ IP:</th>
+                    <td>{item.IP}</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <th>Loại thiết bị:</th>
+                    <td>{item.Type}</td>
+                  </tr>
+                  <tr>
+                    <th>Tên đăng nhập:</th>
+                    <td>{item.login}</td>
+                  </tr>
+                  <tr>
+                    <th>Mật khẩu:</th>
+                    <td>{item.pass}</td>
+                  </tr>
+                </table>
+              </div>
+            );
+          })}
 
-      <div className="AddEquiment_body">
-        <p>Quản lý thiết bị</p>
-        <div className="AddEquiment_body_content">
-          <p>Thông tin thiết bị</p>
-          <div className="AddEquiment_body_content_layout">
-            <div className="AddEquiment_body_content_layout_items">
-              <label>Mã thiết bị: *</label>
-              <input type="text" name="" id="" placeholder="Nhập mã thiết bị" />
-              <label>Tên thiết bị: *</label>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Nhập tên thiết bị"
-              />
-              <label>Địa chỉ IP: *</label>
-              <input type="text" name="" id="" placeholder="Nhập địa chỉ IP" />
-            </div>
-            <div className="AddEquiment_body_content_layout_items">
-              <label>Loại Thiết bị: *</label>
-              <Dropdown
-                options={options}
-                className="chartDropdown"
-                //   value={defaultOption}
-                placeholder="Chọn loại thiết bị"
-              />
-              <label>Tên đăng nhập: *</label>
-              <input type="text" name="" id="" placeholder="Nhập tài khoản" />
-              <label>Mật khẩu: *</label>
-              <input type="text" name="" id="" placeholder="Nhập mật khẩu" />
-            </div>
-          </div>
-          <label>Dịch vụ sử dụng: *</label>
-          <input type="text" name="" id="" placeholder="Nhập dịch vụ sử dụng" />
-          <span>* Là trường thông tin bắt buộc</span>
+          <h4>Dịch vụ sử dụng:</h4>
+          <span>
+            Khám tim mạch, Khám sản - Phụ khoa, Khám răng hàm mặt, Khám tai mũi
+            họng, Khám hô hấp, Khám tổng quát.
+          </span>
         </div>
       </div>
-      <div className="AddEquiment_btn">
-        <Link to="/admin/Equiment">
-          <button className="AddEquiment_btn_active">Hủy bỏ</button>
-        </Link>
-        <Link to="/admin/Equiment/DetailEquiment">
-          <button>Thêm thiết bị</button>
+      <div className="box">
+        <Link to="/admin/Equiment/UpdateEquiment">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.443 2.34507C21.1213 2.24017 22.7762 2.8229 24.0233 3.96506C25.1655 5.2121 25.7482 6.86705 25.655 8.55697V19.4424C25.7599 21.1323 25.1655 22.7873 24.035 24.0343C22.7879 25.1764 21.1213 25.7592 19.443 25.6543H8.55751C6.86758 25.7592 5.21261 25.1764 3.96556 24.0343C2.8234 22.7873 2.24066 21.1323 2.34555 19.4424V8.55697C2.24066 6.86705 2.8234 5.2121 3.96556 3.96506C5.21261 2.8229 6.86758 2.24017 8.55751 2.34507H19.443ZM12.8115 19.6522L20.6551 11.7853C21.366 11.0627 21.366 9.89725 20.6551 9.18632L19.14 7.67122C18.4174 6.94864 17.2519 6.94864 16.5293 7.67122L15.7485 8.46374C15.6319 8.58028 15.6319 8.77841 15.7485 8.89496C15.7485 8.89496 17.6016 10.7364 17.6365 10.783C17.7647 10.9229 17.8463 11.1093 17.8463 11.3191C17.8463 11.7387 17.5083 12.0883 17.0771 12.0883C16.879 12.0883 16.6925 12.0067 16.5643 11.8785L14.618 9.94387C14.5247 9.85063 14.3616 9.85063 14.2683 9.94387L8.70902 15.5031C8.32442 15.8877 8.10298 16.4005 8.09132 16.9483L8.02139 19.7104C8.02139 19.8619 8.06801 20.0018 8.17291 20.1067C8.2778 20.2116 8.41765 20.2699 8.56917 20.2699H11.308C11.8674 20.2699 12.4036 20.0484 12.8115 19.6522Z"
+              fill="#FF9138"
+            />
+          </svg>
+
+          <p>Cập nhật thiết bị</p>
         </Link>
       </div>
     </div>
   );
 };
 
-export default AddEquiment;
+export default DetailEquiment;

@@ -29,8 +29,8 @@
           text-align: left;
           tr {
             th {
-             width: 10rem;
-             height: 40px;
+              width: 10rem;
+              height: 40px;
             }
             td {
               color: #535261;
@@ -48,29 +48,6 @@
     span {
       color: #535261;
       font-size: 16px;
-    }
-  }
-  .DetailEquiment_icon {
-    position: absolute;
-    width: 80px;
-    height: 94px;
-    right: 0;
-    top: 18%;
-    a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 12px 4px;
-      background: #fff2e7;
-      box-shadow: 0px 0px 6px #e7e9f2;
-      border-radius: 8px 0px 0px 8px;
-      p {
-        color: #FF7506;
-        font-weight: 600;
-        font-size: 14px;
-        text-align: center;
-      }
     }
   }
 }

@@ -1,21 +1,19 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import AddEquiment from "./Pages/AddEquiment";
 import Dashboard from "./Pages/Dashboard";
-import DetailEquiment from "./Pages/DetailEquiment";
-import Equiment from "./Pages/Equiment";
-import ForgotPassword from "./Pages/ForgotPassword";
-import Login from "./Pages/Login";
-import ResetPassword from "./Pages/ResetPassword";
+import AddEquiment from "./Pages/Equiment/AddEquiment";
+import DetailEquiment from "./Pages/Equiment/DetailEquiment";
+import UpdateEquiment from "./Pages/Equiment/UpdateEquiment";
+import DetailLevel from "./Pages/Level/DetailLevel";
+import Level from "./Pages/Level/Index";
+import InputLevel from "./Pages/Level/InputLevel";
+import ForgotPassword from "./Pages/login/ForgotPassword";
+import Login from "./Pages/login/Login";
+import ResetPassword from "./Pages/login/ResetPassword";
+import Report from "./Pages/Report";
+import Service from "./Pages/Service/Index";
 import SilderBar from "./Pages/SilderBar";
-import UpdateEquiment from "./Pages/UpdateEquiment";
 import User from "./Pages/User";
-
-
-
-
 
 function Layout() {
   return (
@@ -36,8 +34,6 @@ function Error() {
   );
 }
 const App: FC = () => {
-
-  
   return (
     <Routes>
       <Route path="/" element={<Login />} />
@@ -46,10 +42,15 @@ const App: FC = () => {
       <Route path="/admin" element={<Layout />}>
         <Route index element={<User />} />
         <Route path="Dashboard" element={<Dashboard />} />
-        <Route path="Equiment" element={<Equiment />}></Route>
+        <Route path="Equiment" element={<AddEquiment />} />
         <Route path="Equiment/AddEquiment" element={<AddEquiment />} />
         <Route path="Equiment/DetailEquiment" element={<DetailEquiment />} />
         <Route path="Equiment/UpdateEquiment" element={<UpdateEquiment />} />
+        <Route path="Service" element={<Service />} />
+        <Route path="Level" element={<Level />} />
+        <Route path="Level" element={<InputLevel />} />
+        <Route path="Level" element={<DetailLevel />} />
+        <Route path="Report" element={<Report />} />
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>

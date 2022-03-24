@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../asset/img/logo_alta.svg';
-import banner from '../asset/img/banner/banner_respass.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import Logo from "../../asset/img/logo_alta.svg";
+import banner from "../../asset/img/banner/banner_respass.png";
 
 const ForgotPassword = () => {
   return (
@@ -28,7 +28,7 @@ const ForgotPassword = () => {
         <img src={banner} alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ForgotPassword
+export default ForgotPassword;
