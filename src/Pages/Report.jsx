@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDropdown from "react-dropdown";
 import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Page from "../Components/Page";
@@ -76,11 +77,27 @@ export default function Report() {
       source: "Hệ thống",
     },
   ];
+
+  const optionService = [
+    "Tất cả",
+    "Khám sản - Phụ khoa",
+    "Khám răng hàm mặt",
+    "Khám tai mũi họng",
+  ];
+  const defaultOptionService = optionService[0];
+
   return (
     <>
       <div className="Report">
         <Header title="Báo cáo" />
-
+        <div className="Report_date">
+          <ReactDropdown
+            options={optionService}
+            // onChange={(e) => handleDropdownValue(e)}
+            value={defaultOptionService}
+            placeholder="Select an option"
+          />
+        </div>
         <table className="table">
           <thead>
             <tr>

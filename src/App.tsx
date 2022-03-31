@@ -13,7 +13,8 @@ import Login from "./Pages/login/Login";
 import ResetPassword from "./Pages/login/ResetPassword";
 import Report from "./Pages/Report";
 import Service from "./Pages/Service/Index";
-import Setting from "./Pages/Setting/Index";
+import AddSettingRole from "./Pages/Setting/AddSettingRole";
+import Setting from "./Pages/Setting/SettingRole";
 import SilderBar from "./Pages/SilderBar";
 import User from "./Pages/User";
 
@@ -54,6 +55,7 @@ const App: FC = () => {
         <Route path="Level" element={<DetailLevel />} />
         <Route path="Report" element={<Report />} />
         <Route path="Setting" element={<Setting />} />
+        <Route path="Setting/AddSettingRole" element={<AddSettingRole />} />
       </Route>
       <Route path="*" element={<Error />} />
     </Routes>
