@@ -1,0 +1,18 @@
+.listaccount {
+  background: #f7f7f7;
+  border-radius: 16px;
+  flex: 1;
+  display: flex;
+}
+
+.listlevelright {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+  position: relative;
+}
+* {
+  padding: 0;
+  margin: 0;
+}

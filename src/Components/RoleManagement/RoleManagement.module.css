@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.listrole {
+  background: #f7f7f7;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+}
+
+.listroleright {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+
+.role {
+  /* margin-left: 20px; */
+  position: relative;
+}
+.roleinfo {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 0px; */
+}
+
+.roleinfolist {
+  display: flex;
+  align-items: center;
+}
+.roletitle {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #7e7d88;
+}
+
+.rolegoto {
+  color: #7e7d88;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rolelist {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+
+.bell {
+  padding-right: 40px;
+}
+
+.rolecontainer {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+}
+
+.rolelisttitle {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ff7506;
+}
+
+.tablelistitem {
+  margin-bottom: 10px;
+  width: 100%;
+  filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0px;
+  margin-top: 40px;
+}
+.roletable {
+  display: flex;
+  color: white;
+  width: 100%;
+  background: #ff9138;
+}
+
+.roletablelist {
+  display: flex;
+  color: white;
+  width: 100%;
+  background: #ffffff;
+}
+
+.roleitemname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 49px;
+  border-right: 1px solid #ffe3cd;
+}
+
+.roleitemnametitle {
+  margin-left: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.add {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  top: 158px;
+  display: flex;
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px 0px 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 4px;
+  background: #fff2e7;
+}
+
+.addrole {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ff7506;
+  flex: none;
+  margin: 4px 7px;
+}
+.roletitlename {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ff7506;
+  padding: 7px;
+}
+.leveltablelist {
+  display: flex;
+  color: white;
+  width: 100%;
+  background: #ffffff;
+}
+
+.levelitemname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 49px;
+  border-right: 1px solid #ffe3cd;
+}
+
+.levelitemnametitleid {
+  margin-left: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.leveltablelist:nth-child(2n + 1) {
+  background-color: #fff2e7;
+}
+
+.roleitemnametitleid1 {
+  color: #4277ff;
+  text-decoration-line: underline;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}

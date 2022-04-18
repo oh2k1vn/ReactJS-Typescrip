@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.listlevel {
+  background: #f7f7f7;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+}
+
+.listlevelright {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+  position: relative;
+}

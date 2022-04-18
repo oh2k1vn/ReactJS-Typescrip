@@ -1,0 +1,92 @@
+.bellactive {
+  display: flex;
+  align-items: center;
+}
+.bell {
+  transition: 0.3s;
+}
+.notify {
+  position: absolute;
+  left: 904px;
+  top: 70px;
+  /* overflow-y:auto; */
+  width: 330px;
+  height: 430px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  /* display: none; */
+}
+.notifyheader {
+  /* display: block; */
+}
+
+a {
+  text-decoration: none;
+}
+.notifytitle {
+  background: #ff9138;
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.notifylist {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin-left: 20px;
+}
+
+.notifylink {
+  /* height: 60px; */
+  padding-top: 8px;
+  border-bottom: 1.5px solid #d4d4d7;
+  opacity: 0.6;
+}
+
+.notifyname {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(191, 88, 5, 1);
+}
+.notifytime {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #535261;
+}
+
+.dashboadavata {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.dashboaditemtop {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7e7d88;
+}
+
+.dashboaditembottom {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
