@@ -128,10 +128,13 @@
   height: 44px;
 }
 
+.searchinput {
+  position: relative;
+}
 .fi_search {
   position: absolute;
-  right: 120px;
-  top: 174px;
+  right: 5%;
+  top: 30%;
 }
 .leveltable {
   /* display: grid;

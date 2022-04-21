@@ -185,7 +185,6 @@ function Level({ dataTable, fetchData, SENDDATA }: any) {
             <div className={classes.levelitem}>
               <div className={classes.levelname}>Chọn thời gian</div>
               <div className={classes.leveldrowcalendar}>
-                {/* <img src={calendar} alt=''></img> */}
                 <DatePicker
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}

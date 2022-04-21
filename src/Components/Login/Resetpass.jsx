@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import alta from "../image/alta.png";
-import eyeclose from "../image/eyeclose.svg";
 import pic5 from "../image/pic5.png";
 import pic6 from "../image/pic6.png";
 import pic8 from "../image/pic8.png";
@@ -20,7 +19,6 @@ const Login = () => {
             name=""
             placeholder="*****"
           />
-          <img src={eyeclose} alt="eyeclose" className={classes.eyeclose}></img>
 
           <div className={classes.password}>Nhập lại mật khẩu </div>
           <input
@@ -29,11 +27,7 @@ const Login = () => {
             name=""
             placeholder="*****"
           />
-          <img
-            src={eyeclose}
-            alt="eyeclose"
-            className={classes.eyeclosepass}
-          ></img>
+         
         </div>
         <Link to="/account">
           <div className={classes.sumit}>

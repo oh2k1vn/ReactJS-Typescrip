@@ -118,11 +118,13 @@
   height: 44px;
   margin-top: 10px;
 }
-
+.searchinput {
+  position: relative;
+}
 .fi_search {
   position: absolute;
-  right: 105px;
-  top: 177px;
+  right: 2.5%;
+  top: 43%;
 }
 
 .tablelistitem {

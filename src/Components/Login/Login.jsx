@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import alta from "../image/alta.png";
 import pic5 from "../image/pic5.png";
 import pic6 from "../image/pic6.png";
-import pic7 from "../image/pic7.png";
+// import pic7 from "../image/pic7.png";
 import pic8 from "../image/pic8.png";
 import classes from "./Login.module.css";
 const Login = () => {
@@ -26,7 +26,7 @@ const Login = () => {
             name=""
             placeholder="****"
           />
-          <img src={pic7} alt="eye" className={classes.eye}></img>
+          {/* <img src={pic7} alt="eye" className={classes.eye}></img> */}
           <Link to="/wrong/forgot">
             <div className={classes.password1}>Quên mật khẩu? </div>
           </Link>
